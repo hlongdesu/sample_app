@@ -34,7 +34,7 @@ en:
     home:
       title: "Home"
       para1_html: "This is the home page for the %{href}"
-      para2: "sample application"
+      para2_html: "sample application"
     help:
       title: "Help"
       para1_html: "Get help on the Ruby on Rails Tutorial at the %{link}"
@@ -49,12 +49,22 @@ en:
       title: "Contact"
       para1_html: "Contact the Ruby on Rails Tutorial about the sample app at the %{href}"
       contact_page: "contact page"
+
   book: "book"
   tutorial: "Ruby on Rails Tutorial"
-  main_title: "Ruby on Rails Tutorial Sample App"
+  main_title: "Ruby on Rails"
   screencast: "screencast series"
   log_in_message_html: "This is a text, with a %{href} inside."
   log_in_href: "link"
+  home: "Home"
+  help: "Help"
+  log_in: "Log in"
+  sign_up: "Sign up now!"
+  newuser: "This will be a signup page for new users."
+  author: "Michael Hart"
+  sample_app: "Sample App"
+  welcome: "Welcome to the sample app"
+  footer_text_html: "The %{main_href} by %{author_href}"
   url:
     main_page: "https://www.railstutorial.org/"
     help_page: "https://www.railstutorial.org/help"
