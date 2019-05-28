@@ -1,0 +1,14 @@
+<footer class="footer">
+  <small>
+    <%= t "footer_html", main_href: link_to(t("tutorial"),
+    "https://www.railstutorial.org"),
+    author_href: link_to(t("author"), "http://www.michaelhartl.com/") %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t("static_pages.about.title"), about_path %></li>
+      <li><%= link_to t("static_pages.contact.title"), contact_path %></li>
+      <li><%= link_to t("news"), "http://news.railstutorial.org/" %></li>
+    </ul>
+  </nav>
+</footer>
