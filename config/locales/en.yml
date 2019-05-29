@@ -59,7 +59,21 @@ en:
   main_title: "Ruby on Rails Tutorial Sample App"
   signup: "Sign up now!"
   login: "Login"
+  logout: "Log out"
   news: "News"
   tutorial: "Ruby on Rails Tutorial"
   footer_html: "The %{main_href} by %{author_href}"
   author: "Michael Hartl"
+  account: "Account"
+  profile: "Profile"
+  setting: "Setting"
+  errors:
+    user_not_found: "User not found"
+    invalid_user: "Invalid User"
+  form:
+    create_account: "Create my Account"
+    name: "Name"
+    password: "Password"
+    confirmation: "Confirmation"
+
+
