@@ -4,6 +4,7 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 ruby "2.5.3"
 
 gem "bootstrap-sass", "3.3.7"
+gem "config"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem "rails", "~> 5.2.3"
@@ -39,6 +40,8 @@ gem "jbuilder", "~> 2.5"
 gem "bootsnap", ">= 1.1.0", require: false
 
 gem "rubocop", "~> 0.54.0", require: false
+
+gem "bcrypt", "3.1.12"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
