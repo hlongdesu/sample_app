@@ -5,5 +5,7 @@ require "rails/test_help"
 class ActiveSupport::TestCase
   fixtures :all
 
-  # Add more helper methods to be used by all tests here...
+  def is_logged_in?
+    !sessions[:user_id].nil?
+  end
 end
