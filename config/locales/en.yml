@@ -59,22 +59,28 @@ en:
   main_title: "Ruby on Rails Tutorial Sample App"
   signup: "Sign up now!"
   login: "Login"
-  logout: "Log out"
+  new_user: "New user? "
   news: "News"
   tutorial: "Ruby on Rails Tutorial"
   footer_html: "The %{main_href} by %{author_href}"
   author: "Michael Hartl"
-  account: "Account"
+  login: "Log in"
   profile: "Profile"
-  setting: "Setting"
-  new_user: "New user? "
-  errors:
-    user_not_found: "User not found"
-    invalid_user: "Invalid User"
+  settings: "Settings"
+  logout: "Log Out"
+  users: "Users"
+  account: "Account"
   form:
-    create_account: "Create my Account"
+    create_account: "Create my account"
     name: "Name"
     password: "Password"
+    email: "Email"
     confirmation: "Confirmation"
-
-
+    remember_me: "Remember me on this computer"
+  errors:
+    invalid_user: "Invalid User"
+    user_not_found: "Not Found"
+    error_html: "This form contains %{error_count}."
+    error:
+      one: "%{count} error"
+      other: "%{count} errors"
