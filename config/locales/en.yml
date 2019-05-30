@@ -67,6 +67,7 @@ en:
   account: "Account"
   profile: "Profile"
   setting: "Setting"
+  new_user: "New user? "
   errors:
     user_not_found: "User not found"
     invalid_user: "Invalid User"
