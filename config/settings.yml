@@ -13,3 +13,4 @@ enable: true
 domain: "example.com"
 host: "localhost:3000"
 protocol: "http"
+password_expired: 2
