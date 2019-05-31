@@ -70,6 +70,12 @@ en:
   logout: "Log Out"
   users: "Users"
   account: "Account"
+  profile_updated: "Profile updated"
+  all_users: "All users"
+  delete: "Delete"
+  sure: "You sure?"
+  update_profile: "Update your profile"
+  user_deleted: "User delete"
   form:
     create_account: "Create my account"
     name: "Name"
@@ -77,9 +83,13 @@ en:
     email: "Email"
     confirmation: "Confirmation"
     remember_me: "Remember me on this computer"
+    edit: "Edit user"
+    save_changes: "Save changes"
   errors:
     invalid_user: "Invalid User"
-    user_not_found: "Not Found"
+    user_not_found: "Users Not Found"
+    please_login: "Please log in."
+    delete_failed: "Deleted Failed"
     error_html: "This form contains %{error_count}."
     error:
       one: "%{count} error"
