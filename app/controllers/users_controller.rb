@@ -10,9 +10,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    return @user if @user = User.find_by(id: params[:id])
-    flash[:danger] = t "errors.user_not_found"
-    redirect_to root_path
+    redirect_to root_url && return unless @user.activated
   end
 
   def new
@@ -20,11 +18,11 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(user_params)
+    @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "static_pages.home.sample_app"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "check_activaion_link"
+      redirect_to root_path
     else
       render :new
     end

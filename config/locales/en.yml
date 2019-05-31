@@ -75,7 +75,13 @@ en:
   delete: "Delete"
   sure: "You sure?"
   update_profile: "Update your profile"
-  user_deleted: "User delete"
+  user_deleted: "User deleted"
+  account_activated: "Account Activated!"
+  invalid_activation_link: "Invalid activation link"
+  check_activation_link: "Please check your email to activate your account."
+  account_activation: "Account activation"
+  activation_content: "Welcome to the Sample App! Click on the link below to activate your account:"
+  email_greeting: "Hi %{name}"
   form:
     create_account: "Create my account"
     name: "Name"
@@ -94,3 +100,4 @@ en:
     error:
       one: "%{count} error"
       other: "%{count} errors"
+    inactive_account: "Account not activated. Check your email for the activation link."
