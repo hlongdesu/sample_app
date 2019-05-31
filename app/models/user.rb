@@ -11,6 +11,7 @@ class User < ApplicationRecord
   validates :password, presence: true, allow_nil: true,
             length: {minimum: Settings.pass_length}
   has_secure_password
+  has_many :microposts, dependent: :destroy
 
   def self.digest string
     cost = if ActiveModel::SecurePassword.min_cost
@@ -60,6 +61,10 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < Settings.password_expired.hours.ago
+  end
+
+  def feed
+    microposts
   end
 
   private

@@ -14,3 +14,8 @@ domain: "example.com"
 host: "localhost:3000"
 protocol: "http"
 password_expired: 2
+max_size: 5
+image_extensions: "image/jpeg,image/gif,image/png"
+content_max: 140
+
+

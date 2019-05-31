@@ -73,7 +73,7 @@ en:
   profile_updated: "Profile updated"
   all_users: "All users"
   delete: "Delete"
-  sure: "You sure?"
+  sure?: "You sure?"
   update_profile: "Update your profile"
   user_deleted: "User deleted"
   account_activated: "Account Activated!"
@@ -94,6 +94,19 @@ en:
       content3: "If you did not request your password to be reset, please ignore this email and
                   your password will stay as it is."
 
+  view_profile: "View my profile"
+  micropost_created: "Micropost created"
+  micropost_deleted: "Micropost deleted"
+  micropost_feed: "Micropost Feed"
+  post_ago: "Posted %{time} ago."
+  less_5MB: "Should be less than 5 MB"
+  post: "Post"
+  sure: "Are you sure?"
+  compose_micropost: "Compose new micropost..."
+  micropost:
+    one: "%{count} micropost"
+    other: "%{count} microposts"
+
   form:
     create_account: "Create my account"
     name: "Name"
@@ -106,9 +119,6 @@ en:
     change: "Change"
     updated_password: "Update password"
     submit: "Submit"
-    password_not_empty: "Password not empty"
-    password_has_expired: "Password reset has expired"
-    email_not_found: "Email not found"
 
   errors:
     password_not_empty: "Password not empty"
@@ -126,9 +136,6 @@ en:
       one: "%{count} error"
       other: "%{count} errors"
     inactive_account: "Account not activated. Check your email for the activation link."
-  user_mailer:
-    password_reset:
-      content1: "To reset your password click the link below:"
-      content2: "This link will expire in two hours."
-      content3: "If you did not request your password to be reset, please ignore this email and
-                  your password will stay as it is."
+    micropost_create_failure: "Micropost create failure"
+
+
