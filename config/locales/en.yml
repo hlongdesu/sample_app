@@ -82,6 +82,18 @@ en:
   account_activation: "Account activation"
   activation_content: "Welcome to the Sample App! Click on the link below to activate your account:"
   email_greeting: "Hi %{name}"
+  forgot_password: "Forgot password"
+  reset_password: "Reset password"
+  password_have_been_reset: "Password have been reset"
+  mail_reset: "Email sent with password reset instructions"
+  password_reset: "Password reset"
+  user_mailer:
+    password_reset:
+      content1: "To reset your password click the link below:"
+      content2: "This link will expire in two hours."
+      content3: "If you did not request your password to be reset, please ignore this email and
+                  your password will stay as it is."
+
   form:
     create_account: "Create my account"
     name: "Name"
@@ -91,13 +103,32 @@ en:
     remember_me: "Remember me on this computer"
     edit: "Edit user"
     save_changes: "Save changes"
+    change: "Change"
+    updated_password: "Update password"
+    submit: "Submit"
+    password_not_empty: "Password not empty"
+    password_has_expired: "Password reset has expired"
+    email_not_found: "Email not found"
+
   errors:
+    password_not_empty: "Password not empty"
+    password_has_expired: "Password reset has expired"
+    email_not_found: "Email not found"
     invalid_user: "Invalid User"
     user_not_found: "Users Not Found"
     please_login: "Please log in."
     delete_failed: "Deleted Failed"
     error_html: "This form contains %{error_count}."
+    password_not_empty: "Password not empty"
+    password_has_expired: "Password reset has expired"
+    email_not_found: "Email not found"
     error:
       one: "%{count} error"
       other: "%{count} errors"
     inactive_account: "Account not activated. Check your email for the activation link."
+  user_mailer:
+    password_reset:
+      content1: "To reset your password click the link below:"
+      content2: "This link will expire in two hours."
+      content3: "If you did not request your password to be reset, please ignore this email and
+                  your password will stay as it is."
