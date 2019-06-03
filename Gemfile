@@ -7,6 +7,7 @@ gem "bootstrap-sass", "3.3.7"
 gem "bootstrap-will_paginate", "1.0.0"
 gem "config"
 gem "faker", "1.7.3"
+gem "figaro"
 gem "jquery-rails"
 gem "will_paginate", "3.1.7"
 
@@ -65,6 +66,7 @@ group :test do
   gem "selenium-webdriver"
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem "chromedriver-helper"
+  gem "rails-controller-testing", "1.0.2"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

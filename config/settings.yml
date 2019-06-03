@@ -4,3 +4,12 @@ pass_length: 6
 size_ava: 80
 checked: "1"
 gravatar: 50
+per_page: 30
+default_email: "noreply@example.com"
+address: "smtp.gmail.com"
+port: 587
+authentication: "plain"
+enable: true
+domain: "example.com"
+host: "localhost:3000"
+protocol: "http"
