@@ -12,6 +12,14 @@ class User < ApplicationRecord
             length: {minimum: Settings.pass_length}
   has_secure_password
   has_many :microposts, dependent: :destroy
+  has_many :active_relationships, class_name: Relationship.name,
+                                  foreign_key: :follower_id,
+                                  dependent: :destroy
+  has_many :passive_relationships, class_name: Relationship.name,
+                                   foreign_key: :followed_id,
+                                   dependent: :destroy
+  has_many :following, through: :active_relationships, source: :followed
+  has_many :followers, through: :passive_relationships
 
   def self.digest string
     cost = if ActiveModel::SecurePassword.min_cost
@@ -64,7 +72,20 @@ class User < ApplicationRecord
   end
 
   def feed
-    microposts
+    following_ids << id
+    Micropost.feed following_ids
+  end
+
+  def follow other_user
+    following << other_user
+  end
+
+  def unfollow other_user
+    following.delete other_user
+  end
+
+  def following? other_user
+    following.include? other_user
   end
 
   private
