@@ -44,9 +44,21 @@ class UsersController < ApplicationController
       flash[:success] = t "user_deleted"
       redirect_to users_url
     else
-      flash[:danger] = t "errors.user"
+      flash[:danger] = t "errors.delete_failed"
       redirect_to root_path
     end
+  end
+
+  def following
+    @title = t "following"
+    @users = @user.following.paginate page: params[:page]
+    render :show_follow
+  end
+
+  def followers
+    @title = t "followers"
+    @users = @user.followers.paginate page: params[:page]
+    render :show_follow
   end
 
   private
